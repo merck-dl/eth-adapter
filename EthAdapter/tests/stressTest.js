@@ -8,7 +8,8 @@ const DOMAIN = 'ADomainThatDoesntExistMeantJustForTestingCheckEthAdapterTests';
 
 async function createSeedSSI() {
     const keySSISpace = opendsu.loadApi("keyssi");
-    const seedSSI = await $$.promisify(keySSISpace.createSeedSSI)(DOMAIN, 'v0', 'hint');
+    const seedSSI = await $$.promisify(keySSISpace.createSeedSSI)(DOMAIN, 'v0'
+    ');
     return seedSSI;
 }
 
