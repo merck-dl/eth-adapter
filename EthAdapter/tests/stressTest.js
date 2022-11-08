@@ -1,4 +1,4 @@
-require("../../../privatesky/psknode/bundles/openDSU");
+require("../../../opendsu-sdk/psknode/bundles/openDSU");
 openDSURequire('overwrite-require');
 const opendsu = openDSURequire("opendsu");
 const http = opendsu.loadApi("http");
@@ -8,8 +8,7 @@ const DOMAIN = 'ADomainThatDoesntExistMeantJustForTestingCheckEthAdapterTests';
 
 async function createSeedSSI() {
     const keySSISpace = opendsu.loadApi("keyssi");
-    const seedSSI = await $$.promisify(keySSISpace.createSeedSSI)(DOMAIN, 'v0'
-    ');
+    const seedSSI = await $$.promisify(keySSISpace.createSeedSSI)(DOMAIN, 'v0');
     return seedSSI;
 }
 
