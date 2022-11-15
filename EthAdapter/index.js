@@ -40,7 +40,7 @@ function boot() {
     require("./services/transactionManager").getInstance();
 
     //this require needs to be called after the web3 library require to don't interfere
-    require("../../privatesky/psknode/bundles/openDSU");
+    require("../../opendsu-sdk/psknode/bundles/openDSU");
     openDSURequire('overwrite-require');
 
     app.use(requestBodyJSONMiddleware);
