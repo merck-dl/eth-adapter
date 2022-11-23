@@ -1,1 +1,0 @@
-Here the file smartcontractaddress.txt will be available after deploying the smart contract on the network.
