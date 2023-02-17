@@ -1,2 +1,7 @@
 /SmartContract/node_modules/
 /ApiAdaptor/node_modules/
+# exclude personal notes 
+**/notes.txt
+# exclude VS workspace 
+*.code-workspace
+.vscode/*
